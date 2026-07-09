@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Air Quality ML Pipeline - Egypt
 
 Complete machine learning pipeline for predicting Air Quality Index (AQI), identifying responsible pollutant gases, and classifying health status across Egyptian governorates.
@@ -254,3 +255,4 @@ This project is for educational and research purposes.
 ## Contact
 
 For questions or issues, please open an issue in the repository.
+
