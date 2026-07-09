@@ -1,0 +1,11 @@
+{
+  "missing_values": {},
+  "duplicates_removed": 0,
+  "invalid_governorates": 0,
+  "out_of_range_values": {
+    "pressure": 40699,
+    "wind_speed": 2
+  },
+  "rows_before": 625427,
+  "rows_after": 625427
+}

@@ -1,0 +1,33 @@
+ENGINEERED FEATURES DOCUMENTATION
+============================================================
+
+pm_ratio:
+  pm2_5 / (pm10 + 1) - Fine to coarse particle ratio
+
+no2_o3:
+  no2 * o3 - Photochemical smog indicator
+
+hour_sin:
+  sin(2π * hour / 24) - Cyclical hour encoding
+
+hour_cos:
+  cos(2π * hour / 24) - Cyclical hour encoding
+
+month_sin:
+  sin(2π * month / 12) - Cyclical month encoding
+
+month_cos:
+  cos(2π * month / 12) - Cyclical month encoding
+
+total_pollutants:
+  sum(co, no, no2, o3, so2, pm2_5, pm10, nh3) - Overall pollution burden
+
+temp_humidity:
+  temperature * humidity - Comfort index proxy
+
+wind_vector_x:
+  wind_speed * cos(wind_direction) - East-west wind component
+
+wind_vector_y:
+  wind_speed * sin(wind_direction) - North-south wind component
+

@@ -1,0 +1,194 @@
+{
+  "version": "1.0.0",
+  "training_date": "2026-04-10T02:21:04.577102",
+  "models": {
+    "aqi": {
+      "algorithm": "XGBRegressor",
+      "metrics": {
+        "train": {
+          "mae": 0.27000609040260315,
+          "rmse": 0.4015627382329687,
+          "r2": 0.9999464154243469
+        },
+        "val": {
+          "mae": 0.2885165512561798,
+          "rmse": 0.47866488872975343,
+          "r2": 0.9999237656593323
+        },
+        "test": {
+          "mae": 0.2886284589767456,
+          "rmse": 0.46534927512338164,
+          "r2": 0.9999281764030457
+        }
+      },
+      "hyperparameters": {}
+    },
+    "gas": {
+      "algorithm": "XGBClassifier",
+      "metrics": {
+        "train": {
+          "accuracy": 0.9982457663123175,
+          "precision": 0.9982966267121066,
+          "recall": 0.9982457663123175,
+          "f1": 0.9982586538356895,
+          "f1_per_class": [
+            0.9885057471264368,
+            0.9990640986099737,
+            0.9379441023211748,
+            0.99433101884419,
+            0.9570200573065902
+          ]
+        },
+        "val": {
+          "accuracy": 0.9977215675615176,
+          "precision": 0.9978658478184094,
+          "recall": 0.9977215675615176,
+          "f1": 0.9977655856782283,
+          "f1_per_class": [
+            0.8181818181818182,
+            0.9989214018057222,
+            0.8996865203761756,
+            0.9928581839382015,
+            0.7787610619469026
+          ]
+        },
+        "test": {
+          "accuracy": 0.9975536830660505,
+          "precision": 0.9976837344214666,
+          "recall": 0.9975536830660505,
+          "f1": 0.9975921064084821,
+          "f1_per_class": [
+            0.5,
+            0.998769276670334,
+            0.9295774647887324,
+            0.9920798898071626,
+            0.8163265306122449
+          ]
+        }
+      },
+      "hyperparameters": {}
+    },
+    "health": {
+      "algorithm": "XGBClassifier",
+      "metrics": {
+        "train": {
+          "accuracy": 0.9994472336557042,
+          "precision": 0.9994472229079053,
+          "recall": 0.9994472336557042,
+          "f1": 0.9994472185921482,
+          "f1_per_class": [
+            0.9995782370307887,
+            0.9992396872173107,
+            0.9996042559446411,
+            0.9990457524556161,
+            0.9997121970874345
+          ]
+        },
+        "val": {
+          "accuracy": 0.9977455510608702,
+          "precision": 0.9977452610630646,
+          "recall": 0.9977455510608702,
+          "f1": 0.9977451140259472,
+          "f1_per_class": [
+            0.9949748743718593,
+            0.9969130409458908,
+            0.9983778009311158,
+            0.9961963484945547,
+            0.9989209719884328
+          ]
+        },
+        "test": {
+          "accuracy": 0.9977775290600067,
+          "precision": 0.9977771169193478,
+          "recall": 0.9977775290600067,
+          "f1": 0.9977771226709831,
+          "f1_per_class": [
+            0.9946714031971581,
+            0.9968917553811485,
+            0.9984438055548229,
+            0.9961992398479695,
+            0.9989928347385687
+          ]
+        }
+      },
+      "hyperparameters": {}
+    }
+  },
+  "features": [
+    "governorate",
+    "co",
+    "no",
+    "no2",
+    "o3",
+    "so2",
+    "pm2_5",
+    "pm10",
+    "nh3",
+    "temperature",
+    "humidity",
+    "pressure",
+    "wind_speed",
+    "wind_direction",
+    "precipitation",
+    "gov_id",
+    "year",
+    "month",
+    "hour",
+    "day_of_week",
+    "pm_ratio",
+    "no2_o3",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "total_pollutants",
+    "temp_humidity",
+    "wind_vector_x",
+    "wind_vector_y"
+  ],
+  "encoders": {
+    "governorate_classes": [
+      "Alexandria",
+      "Aswan",
+      "Asyut",
+      "Beheira",
+      "Beni Suef",
+      "Cairo",
+      "Dakahlia",
+      "Damietta",
+      "Fayoum",
+      "Gharbia",
+      "Giza",
+      "Ismailia",
+      "Kafr El Sheikh",
+      "Luxor",
+      "Matrouh",
+      "Minya",
+      "Monufia",
+      "New Valley",
+      "North Sinai",
+      "Port Said",
+      "Qalyubia",
+      "Qena",
+      "Red Sea",
+      "Sharqia",
+      "Sohag",
+      "South Sinai",
+      "Suez"
+    ],
+    "gas_classes": [
+      "no2",
+      "o3",
+      "pm10",
+      "pm2_5",
+      "so2"
+    ],
+    "health_classes": [
+      "Good",
+      "Moderate",
+      "Unhealthy",
+      "Unhealthy (Sensitive)",
+      "Very Unhealthy"
+    ]
+  }
+}

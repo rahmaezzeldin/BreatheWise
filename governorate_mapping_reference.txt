@@ -1,0 +1,114 @@
+Governorate Name Mapping Reference
+==================================================
+
+Alexandria:
+  - al iskandariyah
+  - alexandria
+
+Aswan:
+  - aswan
+
+Asyut:
+  - assiut
+  - asyut
+
+Beheira:
+  - al buhayrah
+  - beheira
+
+Beni Suef:
+  - bani suwayf
+  - beni suef
+
+Cairo:
+  - al qahirah
+  - cairo
+
+Dakahlia:
+  - ad daqahliyah
+  - dakahlia
+
+Damietta:
+  - damietta
+  - dumyat
+
+Fayoum:
+  - al fayyum
+  - faiyum
+  - fayoum
+
+Gharbia:
+  - al gharbiyah
+  - gharbia
+
+Giza:
+  - al jizah
+  - giza
+
+Ismailia:
+  - al isma`iliyah
+  - ismailia
+
+Kafr El Sheikh:
+  - kafr ash shaykh
+  - kafr el sheikh
+
+Luxor:
+  - al uqsar
+  - al uqsur
+  - luxor
+
+Matrouh:
+  - matrouh
+  - matruh
+
+Minya:
+  - al minya
+  - minya
+
+Monufia:
+  - al minufiyah
+  - monufia
+
+New Valley:
+  - al wadi al jadid
+  - al wadi at jadid
+  - new valley
+
+North Sinai:
+  - north sinai
+  - shamal sina'
+
+Port Said:
+  - bur sa`id
+  - port said
+
+Qalyubia:
+  - al qalyubiyah
+  - qalyubia
+
+Qena:
+  - qena
+  - qina
+  - qinā
+
+Red Sea:
+  - al bahr al ahmar
+  - red sea
+
+Sharqia:
+  - ash sharqiyah
+  - sharqia
+
+Sohag:
+  - sohag
+  - suhaj
+
+South Sinai:
+  - janub sina'
+  - south sinai
+
+Suez:
+  - as suways
+  - suez
+

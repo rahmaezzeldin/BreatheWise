@@ -1,0 +1,54 @@
+================================================================================
+                    AIR QUALITY ML PIPELINE
+                    SUPER SIMPLE INSTRUCTIONS
+================================================================================
+
+ALL FILES ARE NOW IN ONE FOLDER!
+Just follow these 3 steps:
+
+================================================================================
+STEP 1: Install Packages (ONE TIME ONLY)
+================================================================================
+
+Copy and paste this command:
+
+pip install pandas numpy scipy scikit-learn xgboost imbalanced-learn matplotlib seaborn joblib streamlit requests openpyxl python-dateutil
+
+Press Enter and wait 1-2 minutes.
+
+
+================================================================================
+STEP 2: Train Models (TAKES 10-30 MINUTES)
+================================================================================
+
+Copy and paste this command:
+
+python run_pipeline.py
+
+Press Enter and wait. The script will:
+✓ Analyze your data
+✓ Clean it
+✓ Train 3 models (AQI, Gas, Health)
+✓ Save results
+
+You'll see progress messages. Just wait until it says "COMPLETED SUCCESSFULLY!"
+
+
+================================================================================
+STEP 3: See Results in Dashboard
+================================================================================
+
+After Step 2 completes, run:
+
+python run_dashboard.py
+
+A web page will open showing live predictions!
+
+
+================================================================================
+THAT'S IT! 
+================================================================================
+
+Questions? Check START_HERE.txt for more details.
+
+================================================================================

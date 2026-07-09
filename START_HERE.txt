@@ -1,0 +1,121 @@
+================================================================================
+AIR QUALITY ML PIPELINE - QUICK START GUIDE
+================================================================================
+
+STEP 1: Install Dependencies
+-----------------------------
+Open PowerShell in this folder and run:
+
+    pip install pandas numpy scipy scikit-learn xgboost imbalanced-learn matplotlib seaborn joblib streamlit requests openpyxl python-dateutil
+
+Wait for installation to complete (1-2 minutes).
+
+
+STEP 2: Run the Pipeline
+-------------------------
+    python run_pipeline.py
+
+This will:
+- Analyze your data (EDA)
+- Clean and preprocess
+- Train 3 models (AQI, Gas, Health)
+- Evaluate performance
+- Save models to 'models/' folder
+
+Time: 10-30 minutes depending on your computer
+
+
+STEP 3: Launch Dashboard
+-------------------------
+After training completes:
+
+    python run_dashboard.py
+
+This opens a web dashboard at http://localhost:8501
+Shows live predictions for all Egyptian governorates
+
+
+================================================================================
+FOLDER STRUCTURE (ALL FILES IN ONE PLACE!)
+================================================================================
+
+D:\depi\final model\
+│
+├── 📄 START_HERE.txt              ← YOU ARE HERE!
+├── 📄 run_pipeline.py             ← RUN THIS to train models
+├── 📄 run_dashboard.py            ← RUN THIS to see dashboard
+├── 📄 requirements.txt            ← Dependencies list
+├── 📄 README.md                   ← Full documentation
+│
+├── 📊 clean_air_dataset.csv       ← Your data (625,427 rows)
+├── 📊 Egypt Governorates for API.xlsx ← Governorate coordinates
+│
+└── 🐍 Python Modules (all in root):
+    ├── main_pipeline.py           ← Main pipeline orchestrator
+    ├── eda_module.py              ← Data analysis
+    ├── data_cleaner.py            ← Data cleaning
+    ├── preprocessor.py            ← Preprocessing
+    ├── feature_engineer.py        ← Feature engineering
+    ├── model_trainer.py           ← Model training
+    ├── model_evaluator.py         ← Model evaluation
+    ├── deployment_manager.py      ← Model deployment
+    ├── monitor.py                 ← Performance monitoring
+    ├── dashboard.py               ← Web dashboard
+    ├── governorate_mapper.py      ← Name mapping
+    └── quick_start.py             ← Quick test script
+
+After training, these folders will be created:
+├── 📁 models/                     ← Trained models
+├── 📁 eda_outputs/                ← EDA visualizations
+└── 📁 evaluation_outputs/         ← Performance metrics
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: Import errors
+Solution: Make sure you installed all dependencies (Step 1)
+
+Problem: "Dataset not found"
+Solution: Make sure clean_air_dataset.csv is in the root folder
+
+Problem: Pipeline is slow
+Solution: This is normal for 625,427 rows. Wait 10-30 minutes.
+
+Problem: Dashboard won't start
+Solution: Make sure you ran run_pipeline.py first to train models
+
+
+================================================================================
+EXPECTED RESULTS
+================================================================================
+
+After training, you should see:
+
+✓ AQI Model:    MAE < 10.0,  R² > 0.85
+✓ Gas Model:    Accuracy > 80%  (vs your old 0%)
+✓ Health Model: Accuracy > 85%  (vs your old 0%)
+
+
+================================================================================
+NEED HELP?
+================================================================================
+
+1. Check README.md for detailed documentation
+2. Check pipeline.log for error messages
+3. All outputs are saved in:
+   - eda_outputs/
+   - evaluation_outputs/
+   - models/
+
+
+================================================================================
+READY TO START?
+================================================================================
+
+Run this command:
+
+    python run_pipeline.py
+
+================================================================================
