@@ -547,5 +547,5 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     
     # Run dashboard
-    API_KEY = "b59ca229e07baa0f2a5035c8c512ddc3"  # Replace with your API key
+    API_KEY = st.secrets["OPENWEATHER_API_KEY"]
     run_dashboard(API_KEY)
